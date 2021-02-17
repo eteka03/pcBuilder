@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom';
 
 const Inconnu = () => {
   return (
-    <Container maxW="xl" centerContent>
-      <Heading mt={12} mb={12}>
+    <Container fontSize="1.2em" maxW="xl" centerContent>
+      <Heading fontSize="2.5em" mt={12} mb={12}>
         404 Page Non Trouvé{' '}
       </Heading>
       <Text>La page que vous essayez de consulter est inconnue.</Text>

@@ -5,11 +5,19 @@ import App from './App';
 import '../src/assets/Styles/global.css';
 import reportWebVitals from './reportWebVitals';
 import * as serviceWorker from './serviceWorker';
+import { Provider } from 'react-redux';
+import { persist_store, store } from './redux/store';
+import { PersistGate } from 'redux-persist/integration/react';
 
 ReactDOM.render(
   <StrictMode>
-    <ColorModeScript />
-    <App />
+    <Provider store={store}>
+      {/* provider pour perssiter le store */}
+      <PersistGate persistor={persist_store}>
+        <ColorModeScript />
+        <App />
+      </PersistGate>
+    </Provider>
   </StrictMode>,
   document.getElementById('root')
 );
