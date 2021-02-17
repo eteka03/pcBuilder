@@ -17,8 +17,8 @@ function App({ initializeComposants }) {
   }, []);
   return (
     <ChakraProvider theme={theme}>
-      <Layout>
-        <Router>
+      <Router>
+        <Layout>
           <Switch>
             <Route exact path="/" component={Accueil} />
             <Route exact path="/composants" component={Accueil} />
@@ -26,8 +26,8 @@ function App({ initializeComposants }) {
             <Route exact path="/checkout" component={Checkout} />
             <Route component={Inconnu} />
           </Switch>
-        </Router>
-      </Layout>
+        </Layout>
+      </Router>
     </ChakraProvider>
   );
 }
