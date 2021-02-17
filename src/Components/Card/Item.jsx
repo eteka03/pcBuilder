@@ -2,11 +2,10 @@ import { Box, Button, IconButton, Img, Text } from '@chakra-ui/react';
 import { AddIcon } from '@chakra-ui/icons';
 import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
+import { addItem } from '../../redux/cart/cart.actions';
+import { connect } from 'react-redux';
 
-const Item = ({ item }) => {
-  useEffect(() => {
-    console.log(item);
-  }, [item]);
+const Item = ({ item, addItem }) => {
   return (
     <Box h="320px" w="250px">
       <Img
@@ -21,13 +20,20 @@ const Item = ({ item }) => {
         <Text>{item?.nom}</Text>
         <Text>{item?.description}</Text>
         <Text fontWeight="900">{item?.prix} $</Text>
-        <IconButton colorScheme="pink" icon={<AddIcon />} />
+        <IconButton
+          onClick={() => addItem(item)}
+          colorScheme="pink"
+          icon={<AddIcon />}
+        />
       </Box>
     </Box>
   );
 };
 
+const mapDispatchToProps = dispatch => ({
+  addItem: item => dispatch(addItem(item)),
+});
+export default connect(null, mapDispatchToProps)(Item);
 Item.propTypes = {
   item: PropTypes.object,
 };
-export default Item;

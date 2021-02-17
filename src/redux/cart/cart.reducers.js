@@ -3,7 +3,7 @@ import {
   DECREASE_QUANTITY,
   INCREASE_QUANTITY,
   REMOVE_ITEM,
-} from './cart.actions';
+} from '../action.types';
 import {
   addItemToCart,
   decreaseItemQuantity,

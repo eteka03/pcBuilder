@@ -6,14 +6,14 @@ export const Composants = [
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam',
     items: [
       {
-        id: 1,
+        id: 19,
         nom: 'processeur-1',
         description: 'voici le processeur 1',
         imageUrl: 'https://picsum.photos/200/300?random=1',
         prix: 10,
       },
       {
-        id: 2,
+        id: 20,
         nom: 'processeur-2',
         description: 'voici le processeur 2',
         imageUrl: 'https://picsum.photos/200/300?random=2',
@@ -35,21 +35,21 @@ export const Composants = [
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam',
     items: [
       {
-        id: 1,
+        id: 81,
         nom: 'RAM-1',
         description: 'voici RAM 1',
         imageUrl: 'https://picsum.photos/200/300?random=13',
         prix: 60,
       },
       {
-        id: 2,
+        id: 52,
         nom: 'RAM-2',
         description: 'voici RAM 2',
         imageUrl: 'https://picsum.photos/200/300?random=22',
         prix: 87,
       },
       {
-        id: 65,
+        id: 5,
         nom: 'RAM-65',
         description: 'voici RAM 65',
         imageUrl: 'https://picsum.photos/200/300?random=6',
@@ -64,21 +64,21 @@ export const Composants = [
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam',
     items: [
       {
-        id: 1,
+        id: 16,
         nom: 'CPU-1',
         description: 'voici le CPU 1',
         imageUrl: 'https://picsum.photos/200/300?random=7',
         prix: 90,
       },
       {
-        id: 2,
+        id: 23,
         nom: 'CPU-2',
         description: 'voici le CPU 2',
         imageUrl: 'https://picsum.photos/200/300?random=23',
         prix: 75,
       },
       {
-        id: 65,
+        id: 75,
         nom: 'CPU-65',
         description: 'voici le CPU 65',
         imageUrl: 'https://picsum.photos/200/300?random=64',
