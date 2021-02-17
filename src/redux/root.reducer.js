@@ -7,7 +7,7 @@ import { composant_reducer } from './composant/composant.reducers';
 const persistConfig = {
   key: 'root',
   storage,
-  whitelist: [],
+  whitelist: ['cart'],
 };
 
 const rootReducer = combineReducers({

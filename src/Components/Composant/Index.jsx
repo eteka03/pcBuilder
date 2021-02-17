@@ -1,7 +1,8 @@
 import React from 'react';
+import List from './List';
 
 const Composant = () => {
-  return <div></div>;
+  return <List />;
 };
 
 export default Composant;
